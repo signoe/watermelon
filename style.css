@@ -1,0 +1,71 @@
+body {
+    padding: 0;
+    margin: 0 auto;
+    font-family: arial;
+    height: 100vh;
+    outline: dashed 1px black;
+    position: relative;
+    background-color: #ECDBBA;
+}
+
+.peel {
+    width: 0;
+    height: 0;
+    border-left: 120px solid transparent;
+    border-right: 120px solid transparent;
+    border-bottom: 200px solid green;
+    border-radius: 0 0 50% 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.white-flesh {
+    width: 0;
+    height: 0;
+    border-left: 105px solid transparent;
+    border-right: 105px solid transparent;
+    border-bottom: 200px solid rgba(255, 255, 150, 0.9);
+    border-radius: 0 0 50% 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+}
+
+.red-flesh {
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 200px solid red;
+    border-radius: 0 0 50% 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -3.5%);
+}
+
+.seeds { 
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 30px 10px;
+    transform: translate(-50%, 200%);
+}
+
+.seeds > div {
+    width: 7px;
+    height: 10px;
+    background-color: black;
+    border-radius: 100% 100% 80% 80%;            
+}
+
+.seed:nth-child(1),
+.seed:nth-child(3),
+.seed:nth-child(5),
+.seed:nth-child(7),
+.seed:nth-child(9) {
+    background: transparent;
+}
